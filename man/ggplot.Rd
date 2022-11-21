@@ -8,8 +8,7 @@
 \alias{plot.ggplot}
 \title{Create a new ggplot plot.}
 \usage{
-ggplot(data = NULL, mapping = aes(), ...,
-  environment = parent.frame())
+ggplot(data = NULL, mapping = aes(), ..., environment = parent.frame())
 
 \method{print}{ggplot}(x, newpage = is.null(vp), vp = NULL, ...)
 
@@ -17,7 +16,7 @@ ggplot(data = NULL, mapping = aes(), ...,
 }
 \arguments{
 \item{data}{Default dataset to use for plot. If not already a data.frame,
-will be converted to one by \code{\link[=fortify]{fortify()}}. If not specified,
+will be converted to one by \code{\link[ggplot2:fortify]{fortify()}}. If not specified,
 must be supplied in each layer added to the plot.}
 
 \item{mapping}{Default list of aesthetic mappings to use for plot.
@@ -25,7 +24,8 @@ If not specified, must be supplied in each layer added to the plot.}
 
 \item{...}{other arguments not used by this method}
 
-\item{environment}{DEPRECATED. Used prior to tidy evaluation.}
+\item{environment}{\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}} Used prior to tidy
+evaluation.}
 
 \item{x}{plot to display}
 
@@ -64,7 +64,7 @@ can also be used to add a layer using data from another
 data frame. See the first example below. The second
 method specifies the default data frame to use for the plot,
 but no aesthetics are defined up front. This is useful when
-one data frame is used predominantly as layers are added,
+one data frame is used predominantly as layers are added, 
 but the aesthetics may vary from one layer to another. The
 third method initializes a skeleton \code{ggplot} object which
 is fleshed out as layers are added. This method is useful when

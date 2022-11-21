@@ -8,7 +8,7 @@
   .functions.ggplot2   = c('create_layout',
                            #'expand_default', ## REMOVED
                            'plot_theme',
-                           'element_render','message_wrap',
+                           'element_render',# 'message_wrap',
                            'set_last_plot','make_labels','build_guides','is.zero','add_ggplot','labelGrob',
                            'is.layer','is.facet','is.Coord','GeomSegment',
                            '.element_tree',
@@ -27,7 +27,9 @@
                            'ggname','ggplot_gtable','camelize',
                            'element_grob.element_line','element_grob.element_rect','element_grob.element_text','element_grob.element_blank',
                            'plot_clone','compute_just','labelGrob',
-                           'hexGrob','try_require','hex_binwidth','hexBinSummarise',
+                           'hexGrob',
+                           # 'try_require', ## REMOVED
+                           'hex_binwidth','hexBinSummarise',
                            'find_args','is.margin','justify_grobs')
   .functions.gridExtra  = c('latticeGrob')
     .functions          = rbind(data.frame(p='ggplot2',  f=unique(.functions.ggplot2)),

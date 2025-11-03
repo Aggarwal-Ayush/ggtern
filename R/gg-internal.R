@@ -11,7 +11,7 @@
                            'element_render',# 'message_wrap',
                            'set_last_plot','make_labels',
                         # 'build_guides',
-                           'is.zero','add_ggplot','labelGrob',
+                           'is_zero','add_ggplot','labelGrob', # changed is.zero to is_zero to work with new ggplot2 update
                            'is.layer','is.facet','is.Coord','GeomSegment',
                            '.element_tree',
                            # 'el_def', ## NOW EXPORTED
